@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
+// ORIGINAL CODE BY Sebastian Lague AT: https://www.youtube.com/watch?v=cWpFZbjtSQg
+
 public class Portal : MonoBehaviour {
    [Header ("Main Settings")] 
    public Portal linkedPortal;

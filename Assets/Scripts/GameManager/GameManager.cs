@@ -84,6 +84,7 @@ public class GameManager : MonoBehaviour
         ActiveLevelList.Remove(newRoom);
         InactiveLevelList.Add(newRoom);
 
+        newRoom.DestroyEntities();
         newRoom.SpawnEntities();
 
         var freePortal = PortalQueue[PortalQueueIndex];
@@ -97,7 +98,7 @@ public class GameManager : MonoBehaviour
 
         if(LevelQueue.Count >= 4){
             var oldRoom = LevelQueue.First.Value; 
-            oldRoom.DestroyEntities();
+            
             LevelQueue.RemoveFirst();
         }
         

@@ -8,7 +8,7 @@ public class gun_generic_script : MonoBehaviour
     public GameObject Player;
     
 
-    public UnityEvent OnGunShoot;
+    [SerializeField] UnityEvent OnGunShoot;
     public float g_fire_cooldown = 0.5f;
     public bool semi = true;
     public bool gun_active = false;
